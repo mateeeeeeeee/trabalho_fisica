@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #27282c;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+}
+
+main
+{
+    margin: 0 15vw 0 15vw;
+}
+
+header
+{
+    text-align:left;
+}
+
+span
+{
+    color: #f15858;
+}
+
+#pergunta 
+{
+    border: 3px solid white;
+    padding: 4px 4px 4px 4px;
+    margin-bottom: 10px;
+}
+
+p
+{
+    color: rgb(88, 91, 241);
+}
+
+#interativo
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label
+{
+    color: #f15858;
+}
+
+input 
+{
+    background: inherit;
+    border: 2px solid white;
+    font-size: inherit;
+    color: inherit;
+    width: 90px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+button
+{
+    border: 2px solid white;
+    background: #27282c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: inherit;
+    letter-spacing: 0.1em;
+    padding: 0px 2px 0px 2px;
+    transition: 0.5s;
+}
+
+button:hover
+{
+    border-color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 10px var(--clr);
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+footer
+{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+footer ul
+{
+    list-style-type: none;
+}
+
+@media (max-width: 830px)
+{
+    button
+    {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 687px)
+{
+    header h1
+    {
+        font-size: 40px;
+    }
+
+    header h4
+    {
+        font-size: 20px;
+    }
+
+    #pergunta, #interativo, footer
+    {
+        font-size: 16px;
+    }
+
+    input
+    {
+        width: 85px;
+    }
+}
+
+@media (max-width: 540px) 
+{
+    input
+    {
+        width: 70px;
+    }    
+}
+
+@media (max-width: 469px)
+{
+    input
+    {
+        width: 50px;
+    }
+
+    button:hover
+    {
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 440px)
+{
+    input
+    {
+        width: 30px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+    {
+        -webkit-appearance: none;
+        margin: 0;    
+    }
+
+    input[type=number]
+    {
+        -moz-appearance: textfield;
+    }
+}

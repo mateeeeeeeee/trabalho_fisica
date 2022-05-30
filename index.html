@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulação numérica de problemas</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Simulação numérica de problemas</h1>
+            <h4>Questão 2</h4>
+        </header>
+
+        <section id="pergunta">
+            Uma massa <span>“M”</span> g de água (calor específico igual a 1 cal/g°C) são aquecidos pela absorção de <span>“P”</span> W de 
+            potência na forma de calor. Considerando 1 cal = 4 J, o intervalo de tempo <span>“Tempo”</span>, em segundos, necessário 
+            para essa quantidade de água variar sua temperatura em <span>“T”</span> °C será de: <p id="resposta"></p>
+        </section>
+        
+        <section id="interativo">
+            <div><label for="massa">M: </label> <input id="massa" type="number" min="0"></div>
+
+            <div><label for="potencia">P: </label> <input id="potencia" type="number" min="0"></div>
+
+            <div><label for="temperatura">T: </label> <input id="temperatura" type="number" min="0"> </div>
+
+            <button style="--clr:#f15858">Calcular</button>
+        </section>
+
+        <footer>
+            <ul>
+                <li>Grupo: Arthur Ribeiro, Enzo Bambirra, Mateus Henrique e Sofia Pereira</li>
+                <li>Turma: INF 2A</li>
+            </ul>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
